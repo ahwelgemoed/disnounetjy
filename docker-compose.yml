@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  watseserver:
+    container_name: watse-server
+    restart: unless-stopped
+    image: watse-server-prod:1.0.0
+    build:
+      context: ./server
+      target: production
+      dockerfile: Dockerfile
+    ports:
+      - 6060:6060
+    networks:
+      - shared-networks
+
+networks:
+  shared-networks:
