@@ -145,7 +145,11 @@ h3 {
   text-decoration: underline;
   font-family: var(--font-display);
   font-weight: 500;
+  color: var(--color-foreground);
   background: none;
+}
+a {
+  color: var(--color-foreground);
 }
 .button a {
   text-decoration: none;

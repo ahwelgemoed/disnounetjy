@@ -7,18 +7,16 @@ import { getAllPoets, getRandomPoem, Poem } from "~/models/poems.server";
 
 type LoaderData = {
   poem: Awaited<ReturnType<typeof getRandomPoem>>;
-  poets: Awaited<ReturnType<typeof getAllPoets>>;
 };
 
 export const loader = async () => {
   return json<LoaderData>({
     poem: (await getRandomPoem()) as Poem,
-    poets: (await getAllPoets()) as string[],
   });
 };
 
 export default function Index() {
-  const { poem, poets } = useLoaderData() as { poem: Poem; poets: string[] };
+  const { poem } = useLoaderData() as { poem: Poem };
   return (
     <Layout>
       <Poems poem={poem} />
