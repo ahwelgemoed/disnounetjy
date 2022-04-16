@@ -1,6 +1,8 @@
 import path from "path";
 import fs from "fs";
 import { marked } from "marked";
+import publishedPoems from "./publishedPoems.json";
+import publishedPoets from "./publishedPoets.json";
 
 export type Poem = {
   id: string;
@@ -9,24 +11,13 @@ export type Poem = {
   date: string;
   handle: string;
 };
-const ALL_PUBLISHED_POEMS = path.join(
-  process.cwd(),
-  "app/models/publishedPoems.json"
-);
-const ALL_PUBLISHED_POETS = path.join(
-  process.cwd(),
-  "app/models/publishedPoets.json"
-);
 
 export async function getAllPoems(): Promise<Array<Poem>> {
-  const rawData = fs.readFileSync(ALL_PUBLISHED_POEMS);
-  const data: Poem[] = JSON.parse(rawData as any); // TODO See what we can fix here?
-  return [...data];
+  return publishedPoems;
 }
 export async function getRandomPoem(): Promise<Poem> {
-  const rawData = fs.readFileSync(ALL_PUBLISHED_POEMS);
-  const data: Poem[] = JSON.parse(rawData as any); // TODO See what we can fix here?
-  const poem = data[Math.floor(Math.random() * data.length)];
+  const poem =
+    publishedPoems[Math.floor(Math.random() * publishedPoems.length)];
 
   const parsedMD = marked(poem.bodyText);
   const newPoem = {
@@ -37,7 +28,5 @@ export async function getRandomPoem(): Promise<Poem> {
 }
 
 export async function getAllPoets(): Promise<Array<string>> {
-  const rawData = fs.readFileSync(ALL_PUBLISHED_POETS);
-  const data: string[] = JSON.parse(rawData as any); // TODO See what we can fix here?
-  return data;
+  return publishedPoets;
 }
