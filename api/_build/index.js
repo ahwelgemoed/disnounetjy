@@ -3224,8 +3224,8 @@ var parser = Parser.parse;
 var lexer = Lexer.lex;
 
 // app/models/poems.server.ts
-var ALL_PUBLISHED_POEMS = "app/models/publishedPoems.json";
-var ALL_PUBLISHED_POETS = "app/models/publishedPoets.json";
+var ALL_PUBLISHED_POEMS = "./public/publishedPoems.json";
+var ALL_PUBLISHED_POETS = "./public/publishedPoets.json";
 async function getRandomPoem() {
   const rawData = import_fs.default.readFileSync(ALL_PUBLISHED_POEMS);
   const data = JSON.parse(rawData);
