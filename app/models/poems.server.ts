@@ -9,9 +9,14 @@ export type Poem = {
   date: string;
   handle: string;
 };
-const ALL_PUBLISHED_POEMS = "./publishedPoems.json";
-
-const ALL_PUBLISHED_POETS = "./publishedPoets.json";
+const ALL_PUBLISHED_POEMS = path.join(
+  process.cwd(),
+  "app/models/publishedPoems.json"
+);
+const ALL_PUBLISHED_POETS = path.join(
+  process.cwd(),
+  "app/models/publishedPoets.json"
+);
 
 export async function getAllPoems(): Promise<Array<Poem>> {
   const rawData = fs.readFileSync(ALL_PUBLISHED_POEMS);

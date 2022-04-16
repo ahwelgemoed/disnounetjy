@@ -1247,6 +1247,7 @@ var Poets_default = Poets;
 
 // app/models/poems.server.ts
 init_react();
+var import_path = __toESM(require("path"));
 var import_fs = __toESM(require("fs"));
 
 // node_modules/marked/lib/marked.esm.js
@@ -3224,8 +3225,8 @@ var parser = Parser.parse;
 var lexer = Lexer.lex;
 
 // app/models/poems.server.ts
-var ALL_PUBLISHED_POEMS = "./publishedPoems.json";
-var ALL_PUBLISHED_POETS = "./publishedPoets.json";
+var ALL_PUBLISHED_POEMS = import_path.default.join(process.cwd(), "app/models/publishedPoems.json");
+var ALL_PUBLISHED_POETS = import_path.default.join(process.cwd(), "app/models/publishedPoets.json");
 async function getRandomPoem() {
   const rawData = import_fs.default.readFileSync(ALL_PUBLISHED_POEMS);
   const data = JSON.parse(rawData);
