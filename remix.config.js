@@ -3,7 +3,7 @@
  */
 module.exports = {
   ignoredRouteFiles: [".*"],
-  serverDependenciesToBundle: ["react-image-gallery"],
+  serverDependenciesToBundle: ["react-image-gallery", "marked"],
   // appDirectory: "app",
   // assetsBuildDirectory: "public/build",
   // serverBuildPath: "build/index.js",
