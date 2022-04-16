@@ -1121,11 +1121,9 @@ var import_react2 = require("@remix-run/react");
 var import_framer_motion = require("framer-motion");
 
 // app/styles/global.css
-var global_default = "/build/_assets/global-GGGQULCO.css";
+var global_default = "/build/_assets/global-V2NNA5EF.css";
 
 // route:/Users/ahwelgemoed/Documents/repos/disNouNetJy/app/root.tsx
-{
-}
 var links = () => {
   return [
     { rel: "stylesheet", href: global_default },
@@ -1143,7 +1141,40 @@ var meta = () => ({
 function App() {
   return /* @__PURE__ */ React.createElement("html", {
     lang: "en"
-  }, /* @__PURE__ */ React.createElement("head", null, /* @__PURE__ */ React.createElement(import_react2.Meta, null), /* @__PURE__ */ React.createElement(import_react2.Links, null)), /* @__PURE__ */ React.createElement("body", null, /* @__PURE__ */ React.createElement(import_framer_motion.AnimatePresence, {
+  }, /* @__PURE__ */ React.createElement("head", null, /* @__PURE__ */ React.createElement(import_react2.Meta, null), /* @__PURE__ */ React.createElement("link", {
+    rel: "shortcut icon",
+    href: "./fav.png"
+  }), /* @__PURE__ */ React.createElement("meta", {
+    property: "og:title",
+    content: "Dis Nou Net Jy | Dis Net Jy | DNJ"
+  }), /* @__PURE__ */ React.createElement("meta", {
+    property: "og:description",
+    content: "POST THY SELF"
+  }), /* @__PURE__ */ React.createElement("meta", {
+    property: "og:url",
+    content: "https://disnounetjy.vercel.app/"
+  }), /* @__PURE__ */ React.createElement("meta", {
+    property: "og:type",
+    content: "website"
+  }), /* @__PURE__ */ React.createElement("meta", {
+    property: "og:image",
+    content: "https://disnounetjy.vercel.app/ogImg.png"
+  }), /* @__PURE__ */ React.createElement("meta", {
+    property: "og:image:width",
+    content: "1200"
+  }), /* @__PURE__ */ React.createElement("meta", {
+    property: "og:image:height",
+    content: "630"
+  }), /* @__PURE__ */ React.createElement("meta", {
+    property: "twitter:card",
+    content: "summary_large_image"
+  }), /* @__PURE__ */ React.createElement("meta", {
+    property: "twitter:image",
+    content: "https://disnounetjy.vercel.app//ogImg.png"
+  }), /* @__PURE__ */ React.createElement("meta", {
+    property: "twitter:site",
+    content: "@ahwelgemoed"
+  }), /* @__PURE__ */ React.createElement(import_react2.Links, null)), /* @__PURE__ */ React.createElement("body", null, /* @__PURE__ */ React.createElement(import_framer_motion.AnimatePresence, {
     exitBeforeEnter: true
   }, /* @__PURE__ */ React.createElement(import_react2.Outlet, null)), /* @__PURE__ */ React.createElement(import_react2.ScrollRestoration, null), /* @__PURE__ */ React.createElement(import_react2.Scripts, null), /* @__PURE__ */ React.createElement(import_react2.LiveReload, null)));
 }
@@ -16566,12 +16597,11 @@ var Poems_default = Poems;
 // route:/Users/ahwelgemoed/Documents/repos/disNouNetJy/app/routes/index.tsx
 var loader2 = async () => {
   return (0, import_node2.json)({
-    poem: await getRandomPoem(),
-    poets: await getAllPoets()
+    poem: await getRandomPoem()
   });
 };
 function Index() {
-  const { poem, poets } = (0, import_react6.useLoaderData)();
+  const { poem } = (0, import_react6.useLoaderData)();
   return /* @__PURE__ */ React.createElement(Layout_default, null, /* @__PURE__ */ React.createElement(Poems_default, {
     poem
   }));
@@ -16579,7 +16609,7 @@ function Index() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { "version": "68694b32", "entry": { "module": "/build/entry.client-OEGHZHQ7.js", "imports": ["/build/_shared/chunk-HW7HDJSK.js"] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "module": "/build/root-P7YC7FHM.js", "imports": ["/build/_shared/chunk-KQZX635M.js"], "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/diedigters": { "id": "routes/diedigters", "parentId": "root", "path": "diedigters", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/diedigters-V4PQUSRK.js", "imports": ["/build/_shared/chunk-FDP3V47U.js", "/build/_shared/chunk-6VCSSW2I.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/index": { "id": "routes/index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/index-4O257EU5.js", "imports": ["/build/_shared/chunk-FDP3V47U.js", "/build/_shared/chunk-6VCSSW2I.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/lastegedig": { "id": "routes/lastegedig", "parentId": "root", "path": "lastegedig", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/lastegedig-WDG5G4GS.js", "imports": ["/build/_shared/chunk-6VCSSW2I.js"], "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false } }, "url": "/build/manifest-68694B32.js" };
+var assets_manifest_default = { "version": "091bc623", "entry": { "module": "/build/entry.client-OEGHZHQ7.js", "imports": ["/build/_shared/chunk-HW7HDJSK.js"] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "module": "/build/root-QKBM2BJK.js", "imports": ["/build/_shared/chunk-KQZX635M.js"], "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/diedigters": { "id": "routes/diedigters", "parentId": "root", "path": "diedigters", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/diedigters-V4PQUSRK.js", "imports": ["/build/_shared/chunk-FDP3V47U.js", "/build/_shared/chunk-6VCSSW2I.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/index": { "id": "routes/index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/index-ZQENPN7K.js", "imports": ["/build/_shared/chunk-FDP3V47U.js", "/build/_shared/chunk-6VCSSW2I.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/lastegedig": { "id": "routes/lastegedig", "parentId": "root", "path": "lastegedig", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/lastegedig-WDG5G4GS.js", "imports": ["/build/_shared/chunk-6VCSSW2I.js"], "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false } }, "url": "/build/manifest-091BC623.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var entry = { module: entry_server_exports };
