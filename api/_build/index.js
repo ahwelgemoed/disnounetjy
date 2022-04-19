@@ -1239,7 +1239,12 @@ var Layout = ({ children }) => {
     className: "button"
   }, /* @__PURE__ */ React.createElement(import_react3.Link, {
     to: "/diedigters"
-  }, "die digters"))), /* @__PURE__ */ React.createElement(import_framer_motion2.motion.div, {
+  }, "die digters")), /* @__PURE__ */ React.createElement("button", {
+    className: "button"
+  }, /* @__PURE__ */ React.createElement("a", {
+    target: "_blank",
+    href: "https://klyntji.com/"
+  }, "klyntji"))), /* @__PURE__ */ React.createElement(import_framer_motion2.motion.div, {
     initial: "hidden",
     animate: "visible",
     variants: ContainerAnimation
@@ -16439,7 +16444,7 @@ var loader = async () => {
 };
 var LasteGedig = () => {
   const { poets } = (0, import_react4.useLoaderData)();
-  return /* @__PURE__ */ React.createElement(Layout_default, null, /* @__PURE__ */ React.createElement("h2", null, "Die Digters"), /* @__PURE__ */ React.createElement(LayoutItem_default, null, /* @__PURE__ */ React.createElement(Poets_default, {
+  return /* @__PURE__ */ React.createElement(Layout_default, null, /* @__PURE__ */ React.createElement("h3", null, "Die Digters"), /* @__PURE__ */ React.createElement(LayoutItem_default, null, /* @__PURE__ */ React.createElement(Poets_default, {
     poets
   })));
 };
@@ -16458,53 +16463,72 @@ init_react();
 // app/helpers/lastPoem.ts
 init_react();
 var lastPoem = `
-Dag, hoe gaan dit?
+Haai, hoe gaan dit?
 
-lank laas gepraat... 
+ons het lank laas gepraat... 
 
-wel...
+wel... hoe s\xEA mens dit
 
 *DIS NET JY* of *DNJ* is nou *DIS NOU NET JY* 
 
-Tussen 2016 en 2021  is daar 1795 gedigte geskryf deur ek, jy en hulle. 
+Ons het 'n goeie tyd agter die rug, tussen 2016 en 2021 is daar 1795 gedigte geskryf deur ek, jy en hulle. 
 
-DNJ het vir 3 seisoene geleef.
+DNJ het vir 5 jaar en 3 "seisoene" geleef.
 
 3 websites, 3 foon apps, 3 databases.
 
-Ons was in Ons Klyntji Zine, Ons was beste-este vriende met [klyntji.com](https://klyntji.com/).
+Ons was in _Ons Klyntji Zine_, ons was beste-este vriende met [klyntji.com](https://klyntji.com/).
 
-Maar.
+maar, 
 
-Iewers in 2021  het ek designs vir seisoen 4 begin, maar...
+iewers in 2021 het ek designs vir seisoen 4 begin, maar...
 
 ek weet nie...
 
-Soms met die tipe goed verloor jy jou passie, en soms kom dit terug, maar die keer het dit weg gebly.
+Soms met die tipe goed verloor jy jou passie, en soms kom dit terug, maar die keer het dit v\xEAr-v\xEAr weg gebly.
 
-\u2018n maand of so terug het ek die servers vir [WATSE](https://watse.klyntji.com/) ge-update, en deur dit te doen het ek DNJ per ongeluk offline gevat. In daai maand het niemand my laat weet nie, ek het nie analytics op DNJ nie, maar dit het my nie kwaad gemaak nie, dit het my net laat dink, en ek het besef.
+En so, \u2018n maand of so terug het ek die servers vir [WATSE](https://watse.klyntji.com/) ge-update,
+en deur dit te doen het ek DNJ per ongeluk offline gevat.
+In daai maand het niemand my laat weet nie, dit het my nie kwaad gemaak nie, dit het my net laat dink...
+
+en ek het besef.
 
 DNJ het sy werk gedoen. 
 
-Ek en Jy en hulle, het ons werk gedoen.
+Ek, jy en hulle, het ons werk gedoen.
 
-Dit het my soveel geleer, oor myself, oor code en oor jou. Dit het my geleer hoe om native apps en servers te bou, dit het my geleer eks sleg met Design. 
+Dit het my soveel geleer, oor myself, oor code en oor jou.
 
-Dit het my \u0149 geleedheid gegee in daai 5 jaar van DNJ om uit my situasie te kom, en het gelei dat ek vandag \u0149 beter situasie het.
+Dit het my geleer hoe om native apps en servers te bou.
 
-Dit het my vriende help skryf, en vir oomblikke uit hulle eie situasies kom. DNJ het my laat tafels dek saam met nuwe mense.
+Dit het my geleer eks sleg met Design.
 
-Met tyd het ons situasies verander, ek praat Engels ek leer Nederlands en onthou Afrikaans, my vriende skilder in die Oos Kaap en die tafels is afgedek, ons almal praat soms, maar ons is 30+ en vir een of ander rede beteken dit iets.
+Dit het my geleer ek ken jou nie.
 
-En so dek ek DNJ ook af.
+Dit het my \u0149 geleedheid gegee in die 5 jaar van DNJ om uit my situasie te kom.
+
+sonder jou
+
+Dit het my vriende help skryf, en vir oomblikke uit hulle eie situasies te kom. DNJ het my laat tafels dek saam met nuwe mense.
+
+maar
+
+Met tyd het ons situasies verander, ek praat Engels, ek leer Nederlands en onthou Afrikaans,
+my vriende skilder in die Oos Kaap en die tafels staan afgedek, ons nog praat soms,
+maar ons is 30+ en vir een of ander rede beteken dit iets.
+
+en so sit ek DNJ en vir jou agter my
 
 Ek los al die data hier.
 
-Lees die gedigte, geniet dit.
+Vir wanner ons mekaar mis.
 
-Ons was hier... Dit was goed, jy was fokken lekker.
+Ons laste gedig.
 
-[kom s\xEA hallo](https://www.instagram.com/ahwelgemoed/)
+Ons was hier... dit was fokken lekker.
+
+Onthou my so
+
 `;
 var images = [
   {
@@ -16609,7 +16633,7 @@ function Index() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { "version": "091bc623", "entry": { "module": "/build/entry.client-OEGHZHQ7.js", "imports": ["/build/_shared/chunk-HW7HDJSK.js"] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "module": "/build/root-QKBM2BJK.js", "imports": ["/build/_shared/chunk-KQZX635M.js"], "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/diedigters": { "id": "routes/diedigters", "parentId": "root", "path": "diedigters", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/diedigters-V4PQUSRK.js", "imports": ["/build/_shared/chunk-FDP3V47U.js", "/build/_shared/chunk-6VCSSW2I.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/index": { "id": "routes/index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/index-ZQENPN7K.js", "imports": ["/build/_shared/chunk-FDP3V47U.js", "/build/_shared/chunk-6VCSSW2I.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/lastegedig": { "id": "routes/lastegedig", "parentId": "root", "path": "lastegedig", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/lastegedig-WDG5G4GS.js", "imports": ["/build/_shared/chunk-6VCSSW2I.js"], "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false } }, "url": "/build/manifest-091BC623.js" };
+var assets_manifest_default = { "version": "5576ee8c", "entry": { "module": "/build/entry.client-OEGHZHQ7.js", "imports": ["/build/_shared/chunk-HW7HDJSK.js"] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "module": "/build/root-QKBM2BJK.js", "imports": ["/build/_shared/chunk-KQZX635M.js"], "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/diedigters": { "id": "routes/diedigters", "parentId": "root", "path": "diedigters", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/diedigters-H6BXF2MI.js", "imports": ["/build/_shared/chunk-FDP3V47U.js", "/build/_shared/chunk-CZUQGMUL.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/index": { "id": "routes/index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/index-EOAD7FFO.js", "imports": ["/build/_shared/chunk-FDP3V47U.js", "/build/_shared/chunk-CZUQGMUL.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/lastegedig": { "id": "routes/lastegedig", "parentId": "root", "path": "lastegedig", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/lastegedig-3NQJ2R7C.js", "imports": ["/build/_shared/chunk-CZUQGMUL.js"], "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false } }, "url": "/build/manifest-5576EE8C.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var entry = { module: entry_server_exports };

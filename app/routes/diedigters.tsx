@@ -20,7 +20,7 @@ const LasteGedig = () => {
   const { poets } = useLoaderData() as { poem: Poem; poets: string[] };
   return (
     <Layout>
-      <h2>Die Digters</h2>
+      <h3>Die Digters</h3>
       <LayoutItem>
         <Poets poets={poets} />
       </LayoutItem>

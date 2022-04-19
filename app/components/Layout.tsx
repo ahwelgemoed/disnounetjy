@@ -18,6 +18,11 @@ const Layout: FC = ({ children }) => {
           <button className="button">
             <Link to="/diedigters">die digters</Link>
           </button>
+          <button className="button">
+            <a target="_blank" href="https://klyntji.com/">
+              klyntji
+            </a>
+          </button>
         </div>
         <motion.div
           initial="hidden"
