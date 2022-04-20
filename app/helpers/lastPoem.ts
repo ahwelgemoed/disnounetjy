@@ -1,9 +1,9 @@
 export const lastPoem = `
 Haai, hoe gaan dit?
 
-ons het lank laas gepraat... 
+ons het lank laas gesels. 
 
-wel... hoe sê mens dit
+wel... hoe sê mens die
 
 *DIS NET JY* of *DNJ* is nou *DIS NOU NET JY* 
 
@@ -15,17 +15,15 @@ DNJ het vir 5 jaar en 3 "seisoene" geleef.
 
 Ons was in _Ons Klyntji Zine_, ons was beste-este vriende met [klyntji.com](https://klyntji.com/).
 
-maar, 
+en, 
 
 iewers in 2021 het ek designs vir seisoen 4 begin, maar...
 
 ek weet nie...
 
-Soms met die tipe goed verloor jy jou passie, en soms kom dit terug, maar die keer het dit vêr-vêr weg gebly.
+Soms met die tipe goed verloor jy jou stoom, en soms kom dit terug, maar die keer het dit vêr-vêr weg gebly.
 
-En so, ‘n maand of so terug het ek die servers vir [WATSE](https://watse.klyntji.com/) ge-update,
-en deur dit te doen het ek DNJ per ongeluk offline gevat.
-In daai maand het niemand my laat weet nie, dit het my nie kwaad gemaak nie, dit het my net laat dink...
+'n Maand of so gelede het ek die server vir [WATSE](https://watse.klyntji.com/) ge-update en was DNJ perongeluk vir 'n maand lank offline. Nie 'n haan het gekraai in daardie tydperk nie... en toe besef ek: 
 
 en ek het besef.
 
@@ -33,7 +31,7 @@ DNJ het sy werk gedoen.
 
 Ek, jy en hulle, het ons werk gedoen.
 
-Dit het my soveel geleer, oor myself, oor code en oor jou.
+Die learning curve was styl: oor coding, oor myself en oor jou.
 
 Dit het my geleer hoe om native apps en servers te bou.
 
@@ -41,11 +39,11 @@ Dit het my geleer eks sleg met Design.
 
 Dit het my geleer ek ken jou nie.
 
-Dit het my ŉ geleedheid gegee in die 5 jaar van DNJ om uit my situasie te kom.
+DNJ het my die geleentheid gegee om uit my situasie te kom. 
 
 sonder jou
 
-Dit het my vriende help skryf, en vir oomblikke uit hulle eie situasies te kom. DNJ het my laat tafels dek saam met nuwe mense.
+Dit het my vriende toegelaat om hulleself vir 'n oomblik lank uit hulle situasies te skryf.
 
 maar
 

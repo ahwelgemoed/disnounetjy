@@ -5,7 +5,7 @@ import LayoutItem from "~/components/LayoutItem";
 const LasteGedig = () => {
   return (
     <Layout>
-      <h3>Die Laste Gedig</h3>
+      <h3>Die Lasste Gedig</h3>
       <LayoutItem>
         <LastPoem />
       </LayoutItem>

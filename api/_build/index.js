@@ -1179,109 +1179,14 @@ function App() {
   }, /* @__PURE__ */ React.createElement(import_react2.Outlet, null)), /* @__PURE__ */ React.createElement(import_react2.ScrollRestoration, null), /* @__PURE__ */ React.createElement(import_react2.Scripts, null), /* @__PURE__ */ React.createElement(import_react2.LiveReload, null)));
 }
 
-// route:/Users/ahwelgemoed/Documents/repos/disNouNetJy/app/routes/diedigters.tsx
-var diedigters_exports = {};
-__export(diedigters_exports, {
-  default: () => diedigters_default,
-  loader: () => loader
+// route:/Users/ahwelgemoed/Documents/repos/disNouNetJy/app/routes/laaste-gedig.tsx
+var laaste_gedig_exports = {};
+__export(laaste_gedig_exports, {
+  default: () => laaste_gedig_default
 });
 init_react();
-var import_node = require("@remix-run/node");
-var import_react4 = require("@remix-run/react");
 
-// app/components/Layout.tsx
-init_react();
-var import_react3 = require("@remix-run/react");
-var import_framer_motion2 = require("framer-motion");
-
-// app/helpers/anamations.ts
-init_react();
-var ContainerAnimation = {
-  visible: {
-    opacity: 1,
-    transition: {
-      duration: 0.3,
-      when: "beforeChildren",
-      staggerChildren: 0.3
-    }
-  },
-  hidden: {
-    opacity: 0,
-    transition: {
-      duration: 0.3,
-      when: "afterChildren"
-    }
-  }
-};
-var ItemsAnimation = {
-  visible: { opacity: 1, y: 0 },
-  hidden: { opacity: 0, y: 5 }
-};
-
-// app/components/Layout.tsx
-var Layout = ({ children }) => {
-  return /* @__PURE__ */ React.createElement("div", {
-    className: "main-container"
-  }, /* @__PURE__ */ React.createElement(import_react3.Link, {
-    to: "/"
-  }, /* @__PURE__ */ React.createElement("img", {
-    src: "./dnnj.svg",
-    className: "d-logo"
-  })), /* @__PURE__ */ React.createElement("div", {
-    className: "container"
-  }, /* @__PURE__ */ React.createElement("div", {
-    className: "button-container-header"
-  }, /* @__PURE__ */ React.createElement("button", {
-    className: "button"
-  }, /* @__PURE__ */ React.createElement(import_react3.Link, {
-    to: "/lastegedig"
-  }, "ons laste gedig")), /* @__PURE__ */ React.createElement("button", {
-    className: "button"
-  }, /* @__PURE__ */ React.createElement(import_react3.Link, {
-    to: "/diedigters"
-  }, "die digters")), /* @__PURE__ */ React.createElement("button", {
-    className: "button"
-  }, /* @__PURE__ */ React.createElement("a", {
-    target: "_blank",
-    href: "https://klyntji.com/"
-  }, "klyntji"))), /* @__PURE__ */ React.createElement(import_framer_motion2.motion.div, {
-    initial: "hidden",
-    animate: "visible",
-    variants: ContainerAnimation
-  }, children)));
-};
-var Layout_default = Layout;
-
-// app/components/LayoutItem.tsx
-init_react();
-var import_framer_motion3 = require("framer-motion");
-var LayoutItem = ({ children }) => {
-  return /* @__PURE__ */ React.createElement(import_framer_motion3.motion.div, {
-    variants: ItemsAnimation
-  }, children);
-};
-var LayoutItem_default = LayoutItem;
-
-// app/components/Poets.tsx
-init_react();
-var Poets = ({ poets }) => {
-  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", {
-    className: "poets-components"
-  }, poets.map((poet) => {
-    const sanity = poet.replace("@", "").replace(" ", "");
-    return /* @__PURE__ */ React.createElement("div", {
-      key: poet,
-      className: "poet"
-    }, /* @__PURE__ */ React.createElement("a", {
-      className: "poet-link",
-      target: "_blank",
-      href: `https://www.instagram.com/${sanity}/`
-    }, sanity));
-  })));
-};
-var Poets_default = Poets;
-
-// app/models/poems.server.ts
+// app/components/LastPoem.tsx
 init_react();
 
 // node_modules/marked/lib/marked.esm.js
@@ -3257,6 +3162,231 @@ var walkTokens = marked.walkTokens;
 var parseInline = marked.parseInline;
 var parser = Parser.parse;
 var lexer = Lexer.lex;
+
+// app/helpers/lastPoem.ts
+init_react();
+var lastPoem = `
+Haai, hoe gaan dit?
+
+ons het lank laas gesels. 
+
+wel... hoe s\xEA mens die
+
+*DIS NET JY* of *DNJ* is nou *DIS NOU NET JY* 
+
+Ons het 'n goeie tyd agter die rug, tussen 2016 en 2021 is daar 1795 gedigte geskryf deur ek, jy en hulle. 
+
+DNJ het vir 5 jaar en 3 "seisoene" geleef.
+
+3 websites, 3 foon apps, 3 databases.
+
+Ons was in _Ons Klyntji Zine_, ons was beste-este vriende met [klyntji.com](https://klyntji.com/).
+
+en, 
+
+iewers in 2021 het ek designs vir seisoen 4 begin, maar...
+
+ek weet nie...
+
+Soms met die tipe goed verloor jy jou stoom, en soms kom dit terug, maar die keer het dit v\xEAr-v\xEAr weg gebly.
+
+'n Maand of so gelede het ek die server vir [WATSE](https://watse.klyntji.com/) ge-update en was DNJ perongeluk vir 'n maand lank offline. Nie 'n haan het gekraai in daardie tydperk nie... en toe besef ek: 
+
+en ek het besef.
+
+DNJ het sy werk gedoen. 
+
+Ek, jy en hulle, het ons werk gedoen.
+
+Die learning curve was styl: oor coding, oor myself en oor jou.
+
+Dit het my geleer hoe om native apps en servers te bou.
+
+Dit het my geleer eks sleg met Design.
+
+Dit het my geleer ek ken jou nie.
+
+DNJ het my die geleentheid gegee om uit my situasie te kom. 
+
+sonder jou
+
+Dit het my vriende toegelaat om hulleself vir 'n oomblik lank uit hulle situasies te skryf.
+
+maar
+
+Met tyd het ons situasies verander, ek praat Engels, ek leer Nederlands en onthou Afrikaans,
+my vriende skilder in die Oos Kaap en die tafels staan afgedek, ons nog praat soms,
+maar ons is 30+ en vir een of ander rede beteken dit iets.
+
+en so sit ek DNJ en vir jou agter my
+
+Ek los al die data hier.
+
+Vir wanner ons mekaar mis.
+
+Ons laste gedig.
+
+Ons was hier... dit was fokken lekker.
+
+Onthou my so
+
+`;
+var images = [
+  {
+    original: "./demo/Seisoen1_1.gif",
+    description: "Seisoen 1"
+  },
+  {
+    original: "./demo/Seisoen2_1.png",
+    description: "Seisoen 2"
+  },
+  {
+    original: "./demo/Seisoen3_1.gif",
+    description: "Seisoen 3"
+  },
+  {
+    original: "./demo/Seisoen3_2.jpg",
+    description: "Seisoen 3"
+  },
+  {
+    original: "./demo/Seisoen3_3.jpg",
+    description: "Seisoen 3"
+  },
+  {
+    original: "./demo/Seisoen4_1.png",
+    description: "Seisoen 4"
+  }
+];
+
+// app/components/LastPoem.tsx
+var import_react_image_gallery = __toESM(require_image_gallery());
+var LastPoem = () => {
+  return /* @__PURE__ */ React.createElement("div", {
+    className: "poem-container"
+  }, /* @__PURE__ */ React.createElement("div", {
+    dangerouslySetInnerHTML: { __html: marked(lastPoem) }
+  }), /* @__PURE__ */ React.createElement(import_react_image_gallery.default, {
+    items: images,
+    infinite: true,
+    autoPlay: true,
+    showNav: false,
+    showPlayButton: false,
+    showThumbnails: false,
+    showFullscreenButton: false
+  }));
+};
+var LastPoem_default = LastPoem;
+
+// app/components/Layout.tsx
+init_react();
+var import_react3 = require("@remix-run/react");
+var import_framer_motion2 = require("framer-motion");
+
+// app/helpers/anamations.ts
+init_react();
+var ContainerAnimation = {
+  visible: {
+    opacity: 1,
+    transition: {
+      duration: 0.3,
+      when: "beforeChildren",
+      staggerChildren: 0.3
+    }
+  },
+  hidden: {
+    opacity: 0,
+    transition: {
+      duration: 0.3,
+      when: "afterChildren"
+    }
+  }
+};
+var ItemsAnimation = {
+  visible: { opacity: 1, y: 0 },
+  hidden: { opacity: 0, y: 5 }
+};
+
+// app/components/Layout.tsx
+var Layout = ({ children }) => {
+  return /* @__PURE__ */ React.createElement("div", {
+    className: "main-container"
+  }, /* @__PURE__ */ React.createElement(import_react3.Link, {
+    to: "/"
+  }, /* @__PURE__ */ React.createElement("img", {
+    src: "./dnnj.svg",
+    className: "d-logo"
+  })), /* @__PURE__ */ React.createElement("div", {
+    className: "container"
+  }, /* @__PURE__ */ React.createElement("div", {
+    className: "button-container-header"
+  }, /* @__PURE__ */ React.createElement("button", {
+    className: "button"
+  }, /* @__PURE__ */ React.createElement(import_react3.Link, {
+    to: "/laaste-gedig"
+  }, "ons laste gedig")), /* @__PURE__ */ React.createElement("button", {
+    className: "button"
+  }, /* @__PURE__ */ React.createElement(import_react3.Link, {
+    to: "/diedigters"
+  }, "die digters")), /* @__PURE__ */ React.createElement("button", {
+    className: "button"
+  }, /* @__PURE__ */ React.createElement("a", {
+    target: "_blank",
+    href: "https://klyntji.com/"
+  }, "klyntji"))), /* @__PURE__ */ React.createElement(import_framer_motion2.motion.div, {
+    initial: "hidden",
+    animate: "visible",
+    variants: ContainerAnimation
+  }, children)));
+};
+var Layout_default = Layout;
+
+// app/components/LayoutItem.tsx
+init_react();
+var import_framer_motion3 = require("framer-motion");
+var LayoutItem = ({ children }) => {
+  return /* @__PURE__ */ React.createElement(import_framer_motion3.motion.div, {
+    variants: ItemsAnimation
+  }, children);
+};
+var LayoutItem_default = LayoutItem;
+
+// route:/Users/ahwelgemoed/Documents/repos/disNouNetJy/app/routes/laaste-gedig.tsx
+var LasteGedig = () => {
+  return /* @__PURE__ */ React.createElement(Layout_default, null, /* @__PURE__ */ React.createElement("h3", null, "Die Lasste Gedig"), /* @__PURE__ */ React.createElement(LayoutItem_default, null, /* @__PURE__ */ React.createElement(LastPoem_default, null)));
+};
+var laaste_gedig_default = LasteGedig;
+
+// route:/Users/ahwelgemoed/Documents/repos/disNouNetJy/app/routes/diedigters.tsx
+var diedigters_exports = {};
+__export(diedigters_exports, {
+  default: () => diedigters_default,
+  loader: () => loader
+});
+init_react();
+var import_node = require("@remix-run/node");
+var import_react4 = require("@remix-run/react");
+
+// app/components/Poets.tsx
+init_react();
+var Poets = ({ poets }) => {
+  return /* @__PURE__ */ React.createElement(React.Fragment, null, /* @__PURE__ */ React.createElement("div", {
+    className: "poets-components"
+  }, poets.map((poet) => {
+    const sanity = poet.replace("@", "").replace(" ", "");
+    return /* @__PURE__ */ React.createElement("div", {
+      key: poet,
+      className: "poet"
+    }, /* @__PURE__ */ React.createElement("a", {
+      className: "poet-link",
+      target: "_blank",
+      href: `https://www.instagram.com/${sanity}/`
+    }, sanity));
+  })));
+};
+var Poets_default = Poets;
+
+// app/models/poems.server.ts
+init_react();
 
 // app/models/publishedPoems.json
 var publishedPoems_default = [
@@ -16442,145 +16572,13 @@ var loader = async () => {
     poets: await getAllPoets()
   });
 };
-var LasteGedig = () => {
+var LasteGedig2 = () => {
   const { poets } = (0, import_react4.useLoaderData)();
   return /* @__PURE__ */ React.createElement(Layout_default, null, /* @__PURE__ */ React.createElement("h3", null, "Die Digters"), /* @__PURE__ */ React.createElement(LayoutItem_default, null, /* @__PURE__ */ React.createElement(Poets_default, {
     poets
   })));
 };
-var diedigters_default = LasteGedig;
-
-// route:/Users/ahwelgemoed/Documents/repos/disNouNetJy/app/routes/lastegedig.tsx
-var lastegedig_exports = {};
-__export(lastegedig_exports, {
-  default: () => lastegedig_default
-});
-init_react();
-
-// app/components/LastPoem.tsx
-init_react();
-
-// app/helpers/lastPoem.ts
-init_react();
-var lastPoem = `
-Haai, hoe gaan dit?
-
-ons het lank laas gepraat... 
-
-wel... hoe s\xEA mens dit
-
-*DIS NET JY* of *DNJ* is nou *DIS NOU NET JY* 
-
-Ons het 'n goeie tyd agter die rug, tussen 2016 en 2021 is daar 1795 gedigte geskryf deur ek, jy en hulle. 
-
-DNJ het vir 5 jaar en 3 "seisoene" geleef.
-
-3 websites, 3 foon apps, 3 databases.
-
-Ons was in _Ons Klyntji Zine_, ons was beste-este vriende met [klyntji.com](https://klyntji.com/).
-
-maar, 
-
-iewers in 2021 het ek designs vir seisoen 4 begin, maar...
-
-ek weet nie...
-
-Soms met die tipe goed verloor jy jou passie, en soms kom dit terug, maar die keer het dit v\xEAr-v\xEAr weg gebly.
-
-En so, \u2018n maand of so terug het ek die servers vir [WATSE](https://watse.klyntji.com/) ge-update,
-en deur dit te doen het ek DNJ per ongeluk offline gevat.
-In daai maand het niemand my laat weet nie, dit het my nie kwaad gemaak nie, dit het my net laat dink...
-
-en ek het besef.
-
-DNJ het sy werk gedoen. 
-
-Ek, jy en hulle, het ons werk gedoen.
-
-Dit het my soveel geleer, oor myself, oor code en oor jou.
-
-Dit het my geleer hoe om native apps en servers te bou.
-
-Dit het my geleer eks sleg met Design.
-
-Dit het my geleer ek ken jou nie.
-
-Dit het my \u0149 geleedheid gegee in die 5 jaar van DNJ om uit my situasie te kom.
-
-sonder jou
-
-Dit het my vriende help skryf, en vir oomblikke uit hulle eie situasies te kom. DNJ het my laat tafels dek saam met nuwe mense.
-
-maar
-
-Met tyd het ons situasies verander, ek praat Engels, ek leer Nederlands en onthou Afrikaans,
-my vriende skilder in die Oos Kaap en die tafels staan afgedek, ons nog praat soms,
-maar ons is 30+ en vir een of ander rede beteken dit iets.
-
-en so sit ek DNJ en vir jou agter my
-
-Ek los al die data hier.
-
-Vir wanner ons mekaar mis.
-
-Ons laste gedig.
-
-Ons was hier... dit was fokken lekker.
-
-Onthou my so
-
-`;
-var images = [
-  {
-    original: "./demo/Seisoen1_1.gif",
-    description: "Seisoen 1"
-  },
-  {
-    original: "./demo/Seisoen2_1.png",
-    description: "Seisoen 2"
-  },
-  {
-    original: "./demo/Seisoen3_1.gif",
-    description: "Seisoen 3"
-  },
-  {
-    original: "./demo/Seisoen3_2.jpg",
-    description: "Seisoen 3"
-  },
-  {
-    original: "./demo/Seisoen3_3.jpg",
-    description: "Seisoen 3"
-  },
-  {
-    original: "./demo/Seisoen4_1.png",
-    description: "Seisoen 4"
-  }
-];
-
-// app/components/LastPoem.tsx
-var import_react_image_gallery = __toESM(require_image_gallery());
-var LastPoem = () => {
-  return /* @__PURE__ */ React.createElement("div", {
-    className: "poem-container"
-  }, /* @__PURE__ */ React.createElement("div", {
-    dangerouslySetInnerHTML: { __html: marked(lastPoem) }
-  }), /* @__PURE__ */ React.createElement(import_react_image_gallery.default, {
-    items: images,
-    infinite: true,
-    autoPlay: true,
-    showNav: false,
-    showPlayButton: false,
-    showThumbnails: false,
-    showFullscreenButton: false
-  }));
-};
-var LastPoem_default = LastPoem;
-
-// route:/Users/ahwelgemoed/Documents/repos/disNouNetJy/app/routes/lastegedig.tsx
-var LasteGedig2 = () => {
-  return /* @__PURE__ */ React.createElement(Layout_default, null, /* @__PURE__ */ React.createElement("h3", null, "Die Laste Gedig"), /* @__PURE__ */ React.createElement(LayoutItem_default, null, /* @__PURE__ */ React.createElement(LastPoem_default, null)));
-};
-var lastegedig_default = LasteGedig2;
+var diedigters_default = LasteGedig2;
 
 // route:/Users/ahwelgemoed/Documents/repos/disNouNetJy/app/routes/index.tsx
 var routes_exports = {};
@@ -16633,7 +16631,7 @@ function Index() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { "version": "5576ee8c", "entry": { "module": "/build/entry.client-OEGHZHQ7.js", "imports": ["/build/_shared/chunk-HW7HDJSK.js"] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "module": "/build/root-QKBM2BJK.js", "imports": ["/build/_shared/chunk-KQZX635M.js"], "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/diedigters": { "id": "routes/diedigters", "parentId": "root", "path": "diedigters", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/diedigters-H6BXF2MI.js", "imports": ["/build/_shared/chunk-FDP3V47U.js", "/build/_shared/chunk-CZUQGMUL.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/index": { "id": "routes/index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/index-EOAD7FFO.js", "imports": ["/build/_shared/chunk-FDP3V47U.js", "/build/_shared/chunk-CZUQGMUL.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/lastegedig": { "id": "routes/lastegedig", "parentId": "root", "path": "lastegedig", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/lastegedig-3NQJ2R7C.js", "imports": ["/build/_shared/chunk-CZUQGMUL.js"], "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false } }, "url": "/build/manifest-5576EE8C.js" };
+var assets_manifest_default = { "version": "c504f49d", "entry": { "module": "/build/entry.client-OEGHZHQ7.js", "imports": ["/build/_shared/chunk-HW7HDJSK.js"] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "module": "/build/root-QKBM2BJK.js", "imports": ["/build/_shared/chunk-KQZX635M.js"], "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/diedigters": { "id": "routes/diedigters", "parentId": "root", "path": "diedigters", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/diedigters-EYWLTW37.js", "imports": ["/build/_shared/chunk-FDP3V47U.js", "/build/_shared/chunk-WZ2VBLYM.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/index": { "id": "routes/index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/index-C2ECFF3C.js", "imports": ["/build/_shared/chunk-FDP3V47U.js", "/build/_shared/chunk-WZ2VBLYM.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/laaste-gedig": { "id": "routes/laaste-gedig", "parentId": "root", "path": "laaste-gedig", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/laaste-gedig-5A7TPAP4.js", "imports": ["/build/_shared/chunk-WZ2VBLYM.js"], "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false } }, "url": "/build/manifest-C504F49D.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var entry = { module: entry_server_exports };
@@ -16646,6 +16644,14 @@ var routes = {
     caseSensitive: void 0,
     module: root_exports
   },
+  "routes/laaste-gedig": {
+    id: "routes/laaste-gedig",
+    parentId: "root",
+    path: "laaste-gedig",
+    index: void 0,
+    caseSensitive: void 0,
+    module: laaste_gedig_exports
+  },
   "routes/diedigters": {
     id: "routes/diedigters",
     parentId: "root",
@@ -16653,14 +16659,6 @@ var routes = {
     index: void 0,
     caseSensitive: void 0,
     module: diedigters_exports
-  },
-  "routes/lastegedig": {
-    id: "routes/lastegedig",
-    parentId: "root",
-    path: "lastegedig",
-    index: void 0,
-    caseSensitive: void 0,
-    module: lastegedig_exports
   },
   "routes/index": {
     id: "routes/index",
