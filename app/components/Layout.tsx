@@ -13,7 +13,7 @@ const Layout: FC = ({ children }) => {
       <div className="container">
         <div className="button-container-header">
           <button className="button">
-            <Link to="/laaste-gedig">ons laste gedig</Link>
+            <Link to="/laaste-gedig">ons laaste gedig</Link>
           </button>
           <button className="button">
             <Link to="/diedigters">die digters</Link>
