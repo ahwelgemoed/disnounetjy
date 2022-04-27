@@ -23,9 +23,7 @@ ek weet nie...
 
 Soms met die tipe goed verloor jy jou stoom, en soms kom dit terug, maar die keer het dit vêr-vêr weg gebly.
 
-'n Maand of so gelede het ek die server vir [WATSE](https://watse.klyntji.com/) ge-update en was DNJ perongeluk vir 'n maand lank offline. Nie 'n haan het gekraai in daardie tydperk nie... en toe besef ek: 
-
-en ek het besef.
+'n Maand of so gelede het ek die server vir [WATSE](https://watse.klyntji.com/) ge-update en DNJ was perongeluk vir 'n maand lank offline. Nie 'n haan het gekraai in daardie tydperk nie... en toe besef ek: 
 
 DNJ het sy werk gedoen. 
 
@@ -39,11 +37,13 @@ Dit het my geleer eks sleg met Design.
 
 Dit het my geleer ek ken jou nie.
 
+Dit het my laat tafels dek met mense.
+
 DNJ het my die geleentheid gegee om uit my situasie te kom. 
 
 sonder jou
 
-Dit het my vriende toegelaat om hulleself vir 'n oomblik lank uit hulle situasies te skryf.
+Dit het my vriende toegelaat om hulleself vir 'n oomblik uit hulle situasies te skryf.
 
 maar
 
