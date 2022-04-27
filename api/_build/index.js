@@ -3338,7 +3338,10 @@ var Layout = ({ children }) => {
     variants: ContainerAnimation
   }, children))), /* @__PURE__ */ React.createElement("footer", {
     className: "footer"
-  }, "\xA9 Copyright ", new Date().getFullYear(), " deur Arno.H Welgemoed"));
+  }, "\xA9 Copyright ", new Date().getFullYear(), " deur", " ", /* @__PURE__ */ React.createElement("a", {
+    target: "_blank",
+    href: "https://www.ahwelgemoed.dev"
+  }, "Arno.H Welgemoed")));
 };
 var Layout_default = Layout;
 
@@ -16633,7 +16636,7 @@ function Index() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { "version": "7062c865", "entry": { "module": "/build/entry.client-OEGHZHQ7.js", "imports": ["/build/_shared/chunk-HW7HDJSK.js"] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "module": "/build/root-TVZRTLTG.js", "imports": ["/build/_shared/chunk-KQZX635M.js"], "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/diedigters": { "id": "routes/diedigters", "parentId": "root", "path": "diedigters", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/diedigters-6Y7E7L3L.js", "imports": ["/build/_shared/chunk-FDP3V47U.js", "/build/_shared/chunk-JREIX4KN.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/index": { "id": "routes/index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/index-ZGSP7JMT.js", "imports": ["/build/_shared/chunk-FDP3V47U.js", "/build/_shared/chunk-JREIX4KN.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/laaste-gedig": { "id": "routes/laaste-gedig", "parentId": "root", "path": "laaste-gedig", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/laaste-gedig-PCJABRA7.js", "imports": ["/build/_shared/chunk-JREIX4KN.js"], "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false } }, "url": "/build/manifest-7062C865.js" };
+var assets_manifest_default = { "version": "64b6e1eb", "entry": { "module": "/build/entry.client-OEGHZHQ7.js", "imports": ["/build/_shared/chunk-HW7HDJSK.js"] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "module": "/build/root-TVZRTLTG.js", "imports": ["/build/_shared/chunk-KQZX635M.js"], "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/diedigters": { "id": "routes/diedigters", "parentId": "root", "path": "diedigters", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/diedigters-SRPHOWJX.js", "imports": ["/build/_shared/chunk-FDP3V47U.js", "/build/_shared/chunk-CX4FNOXS.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/index": { "id": "routes/index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/index-2EQ3JWG4.js", "imports": ["/build/_shared/chunk-FDP3V47U.js", "/build/_shared/chunk-CX4FNOXS.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/laaste-gedig": { "id": "routes/laaste-gedig", "parentId": "root", "path": "laaste-gedig", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/laaste-gedig-7T75EQFI.js", "imports": ["/build/_shared/chunk-CX4FNOXS.js"], "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false } }, "url": "/build/manifest-64B6E1EB.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var entry = { module: entry_server_exports };

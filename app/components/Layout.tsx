@@ -35,7 +35,10 @@ const Layout: FC = ({ children }) => {
         </section>
       </div>
       <footer className="footer">
-        &copy; Copyright {new Date().getFullYear()} deur Arno.H Welgemoed
+        &copy; Copyright {new Date().getFullYear()} deur{" "}
+        <a target="_blank" href="https://www.ahwelgemoed.dev">
+          Arno.H Welgemoed
+        </a>
       </footer>
     </div>
   );
