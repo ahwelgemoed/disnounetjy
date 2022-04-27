@@ -1121,7 +1121,7 @@ var import_react2 = require("@remix-run/react");
 var import_framer_motion = require("framer-motion");
 
 // app/styles/global.css
-var global_default = "/build/_assets/global-BWV34PHD.css";
+var global_default = "/build/_assets/global-HDQCTXBZ.css";
 
 // route:/Users/ahwelgemoed/Documents/repos/disNouNetJy/app/root.tsx
 var links = () => {
@@ -3190,9 +3190,7 @@ ek weet nie...
 
 Soms met die tipe goed verloor jy jou stoom, en soms kom dit terug, maar die keer het dit v\xEAr-v\xEAr weg gebly.
 
-'n Maand of so gelede het ek die server vir [WATSE](https://watse.klyntji.com/) ge-update en was DNJ perongeluk vir 'n maand lank offline. Nie 'n haan het gekraai in daardie tydperk nie... en toe besef ek: 
-
-en ek het besef.
+'n Maand of so gelede het ek die server vir [WATSE](https://watse.klyntji.com/) ge-update en DNJ was perongeluk vir 'n maand lank offline. Nie 'n haan het gekraai in daardie tydperk nie... en toe besef ek: 
 
 DNJ het sy werk gedoen. 
 
@@ -3206,11 +3204,13 @@ Dit het my geleer eks sleg met Design.
 
 Dit het my geleer ek ken jou nie.
 
+Dit het my laat tafels dek met mense.
+
 DNJ het my die geleentheid gegee om uit my situasie te kom. 
 
 sonder jou
 
-Dit het my vriende toegelaat om hulleself vir 'n oomblik lank uit hulle situasies te skryf.
+Dit het my vriende toegelaat om hulleself vir 'n oomblik uit hulle situasies te skryf.
 
 maar
 
@@ -3310,13 +3310,15 @@ var ItemsAnimation = {
 var Layout = ({ children }) => {
   return /* @__PURE__ */ React.createElement("div", {
     className: "main-container"
+  }, /* @__PURE__ */ React.createElement("div", {
+    className: "container"
   }, /* @__PURE__ */ React.createElement(import_react3.Link, {
     to: "/"
   }, /* @__PURE__ */ React.createElement("img", {
     src: "./dnnj.svg",
     className: "d-logo"
   })), /* @__PURE__ */ React.createElement("div", {
-    className: "container"
+    className: "container-body"
   }, /* @__PURE__ */ React.createElement("div", {
     className: "button-container-header"
   }, /* @__PURE__ */ React.createElement("button", {
@@ -3336,7 +3338,7 @@ var Layout = ({ children }) => {
     initial: "hidden",
     animate: "visible",
     variants: ContainerAnimation
-  }, children))), /* @__PURE__ */ React.createElement("footer", {
+  }, children)))), /* @__PURE__ */ React.createElement("footer", {
     className: "footer"
   }, "\xA9 Copyright ", new Date().getFullYear(), " deur", " ", /* @__PURE__ */ React.createElement("a", {
     target: "_blank",
@@ -16636,7 +16638,7 @@ function Index() {
 
 // server-assets-manifest:@remix-run/dev/assets-manifest
 init_react();
-var assets_manifest_default = { "version": "64b6e1eb", "entry": { "module": "/build/entry.client-OEGHZHQ7.js", "imports": ["/build/_shared/chunk-HW7HDJSK.js"] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "module": "/build/root-TVZRTLTG.js", "imports": ["/build/_shared/chunk-KQZX635M.js"], "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/diedigters": { "id": "routes/diedigters", "parentId": "root", "path": "diedigters", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/diedigters-SRPHOWJX.js", "imports": ["/build/_shared/chunk-FDP3V47U.js", "/build/_shared/chunk-CX4FNOXS.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/index": { "id": "routes/index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/index-2EQ3JWG4.js", "imports": ["/build/_shared/chunk-FDP3V47U.js", "/build/_shared/chunk-CX4FNOXS.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/laaste-gedig": { "id": "routes/laaste-gedig", "parentId": "root", "path": "laaste-gedig", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/laaste-gedig-7T75EQFI.js", "imports": ["/build/_shared/chunk-CX4FNOXS.js"], "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false } }, "url": "/build/manifest-64B6E1EB.js" };
+var assets_manifest_default = { "version": "1b596529", "entry": { "module": "/build/entry.client-OEGHZHQ7.js", "imports": ["/build/_shared/chunk-HW7HDJSK.js"] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "module": "/build/root-CMD44ESV.js", "imports": ["/build/_shared/chunk-KQZX635M.js"], "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/diedigters": { "id": "routes/diedigters", "parentId": "root", "path": "diedigters", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/diedigters-F2X2Q3K4.js", "imports": ["/build/_shared/chunk-FDP3V47U.js", "/build/_shared/chunk-DYWHU6EW.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/index": { "id": "routes/index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/index-JBJH7XKK.js", "imports": ["/build/_shared/chunk-FDP3V47U.js", "/build/_shared/chunk-DYWHU6EW.js"], "hasAction": false, "hasLoader": true, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/laaste-gedig": { "id": "routes/laaste-gedig", "parentId": "root", "path": "laaste-gedig", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/laaste-gedig-WYHKQBJN.js", "imports": ["/build/_shared/chunk-DYWHU6EW.js"], "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false } }, "url": "/build/manifest-1B596529.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var entry = { module: entry_server_exports };
