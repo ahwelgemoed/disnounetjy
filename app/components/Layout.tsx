@@ -24,14 +24,19 @@ const Layout: FC = ({ children }) => {
             </a>
           </button>
         </div>
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={ContainerAnimation}
-        >
-          {children}
-        </motion.div>
+        <section>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={ContainerAnimation}
+          >
+            {children}
+          </motion.div>
+        </section>
       </div>
+      <footer className="footer">
+        &copy; Copyright {new Date().getFullYear()} deur Arno.H Welgemoed
+      </footer>
     </div>
   );
 };
