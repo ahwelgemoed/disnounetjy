@@ -1,5 +1,6 @@
-import { motion } from "framer-motion";
-import { FC, useState } from "react";
+import { Link } from "@remix-run/react";
+import { FC } from "react";
+import { sanitizePoet } from "~/helpers/utlis";
 type PoetsType = {
   poets: string[];
 };
@@ -9,16 +10,22 @@ const Poets: FC<PoetsType> = ({ poets }) => {
     <>
       <div className="poets-components">
         {poets.map((poet) => {
-          const sanity = poet.replace("@", "").replace(" ", "");
+          const cleanHandle = sanitizePoet(poet);
           return (
             <div key={poet} className="poet">
+              <b>{cleanHandle}</b>
+              <br />
               <a
                 className="poet-link"
                 target="_blank"
-                href={`https://www.instagram.com/${sanity}/`}
+                href={`https://www.instagram.com/${cleanHandle}/`}
               >
-                {sanity}
+                Instagram
               </a>
+              <br />
+              <Link className="poet-link" to={`/woorde/${cleanHandle}`}>
+                Woorde
+              </Link>
             </div>
           );
         })}

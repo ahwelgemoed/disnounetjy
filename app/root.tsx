@@ -35,11 +35,11 @@ export default function App() {
         <link rel="shortcut icon" href="./fav.png" />
         <meta property="og:title" content="Dis Nou Net Jy | Dis Net Jy | DNJ" />
         <meta property="og:description" content="POST THY SELF" />
-        <meta property="og:url" content="https://disnounetjy.vercel.app/" />
+        <meta property="og:url" content="https://disnounetjy.welgemoed.io/" />
         <meta property="og:type" content="website" />
         <meta
           property="og:image"
-          content="https://disnounetjy.vercel.app/ogImg.png"
+          content="https://disnounetjy.welgemoed.io/ogImg.png"
         />
         <meta property="og:image:width" content="1200" />
 
@@ -48,7 +48,7 @@ export default function App() {
         <meta property="twitter:card" content="summary_large_image" />
         <meta
           property="twitter:image"
-          content="https://disnounetjy.vercel.app//ogImg.png"
+          content="https://disnounetjy.welgemoed.io/ogImg.png"
         />
         <meta property="twitter:site" content="@ahwelgemoed" />
         <Links />

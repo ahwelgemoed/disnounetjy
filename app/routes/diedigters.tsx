@@ -4,7 +4,7 @@ import Layout from "~/components/Layout";
 import LayoutItem from "~/components/LayoutItem";
 import Poets from "~/components/Poets";
 
-import { getAllPoets, getRandomPoem, Poem } from "~/models/poems.server";
+import { getAllPoets, Poem } from "~/models/poems.server";
 
 type LoaderData = {
   poets: Awaited<ReturnType<typeof getAllPoets>>;

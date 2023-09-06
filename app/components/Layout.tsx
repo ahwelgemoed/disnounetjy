@@ -2,13 +2,14 @@ import { Link } from "@remix-run/react";
 import { motion } from "framer-motion";
 import { FC } from "react";
 import { ContainerAnimation } from "~/helpers/anamations";
+import logo from "~/images/dnnj.svg";
 
 const Layout: FC = ({ children }) => {
   return (
     <div className="main-container">
       <div className="container">
         <Link to="/">
-          <img src={"./dnnj.svg"} className="d-logo" />
+          <img src={logo} className="d-logo" alt="DNJ Logo" />
         </Link>
 
         <div className="container-body">
@@ -39,7 +40,7 @@ const Layout: FC = ({ children }) => {
 
       <footer className="footer">
         &copy; Copyright {new Date().getFullYear()} deur{" "}
-        <a target="_blank" href="https://www.ahwelgemoed.dev">
+        <a target="_blank" href="https://www.welgemoed.io">
           Arno.H Welgemoed
         </a>
       </footer>
