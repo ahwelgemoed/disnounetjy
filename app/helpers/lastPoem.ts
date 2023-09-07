@@ -48,7 +48,7 @@ Dit het my vriende toegelaat om hulleself vir 'n oomblik uit hulle situasies te 
 maar
 
 Met tyd het ons situasies verander, ek praat Engels, ek leer Nederlands en onthou Afrikaans,
-my vriende skilder in die Oos Kaap en die tafels staan afgedek, ons nog praat soms,
+my vriende skilder in die Oos Kaap en die tafels staan afgedek, ons praat soms,
 maar ons is 30+ en vir een of ander rede beteken dit iets.
 
 en so sit ek DNJ en vir jou agter my
@@ -62,6 +62,8 @@ Ons laste gedig.
 Ons was hier... dit was fokken lekker.
 
 Onthou my so
+
+gta
 
 `;
 
